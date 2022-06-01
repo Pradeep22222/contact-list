@@ -1,0 +1,34 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  background: rgba(114, 243, 194, 0.408);
+  min-height: 100vh;
+}
+.fa-solid {
+  position: relative;
+  z-index: 3;
+  margin-right: 0.5rem;
+}
+.fa-solid::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(32, 243, 205);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scale(1.8);
+  border-radius: 50%;
+}
+.card-title,
+.card-text,
+.list-group-item {
+  display: inline-block;
+}
+.user-row {
+  height: 33rem;
+  overflow-y: scroll;
+}
